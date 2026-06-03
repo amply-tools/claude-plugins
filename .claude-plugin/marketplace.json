@@ -18,7 +18,6 @@
         "ref": "main"
       },
       "description": "Integrate the Amply SDK into a mobile app (RN / Expo / iOS / Android / KMP) — analytics audit, event mapping, wrapper, deeplinks, and a Who/When/What campaign-readiness audit.",
-      "version": "0.8.0",
       "category": "development"
     }
   ]

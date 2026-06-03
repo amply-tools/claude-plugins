@@ -32,6 +32,14 @@ via the cross-agent [`skills` CLI](https://skills.sh) (Claude Code, Codex CLI, a
 npx skills add amply-tools/sdk-skill
 ```
 
+## How this catalog is wired
+
+`.claude-plugin/marketplace.json` lists each plugin and points at its source. The
+`amply-integration` plugin lives in the [`amply-tools/sdk-skill`](https://github.com/amply-tools/sdk-skill)
+repo under `plugins/amply-integration/`, referenced here via a `git-subdir` source.
+Updating the skill there flows through to this catalog automatically — this repo only
+changes when a plugin is added or its pinned source ref moves.
+
 ## License
 
 Apache License 2.0.
